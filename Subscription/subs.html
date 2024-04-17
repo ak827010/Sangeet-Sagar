@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="subs.css" />
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
+  </head>
+<body>
+  <header>
+    <h1>Sangeet-सागर Subscription</h1>
+  </header>
+
+  <main>
+    <section class="pricing">
+        <div class="plan">
+            <h2>1 Month</h2>
+            <p class="price">&#8377 39</p>
+            <ul>
+                <li>Unlimited access to music library</li>
+                <li>Ad-free listening</li>
+                <li>Offline downloads</li>
+            </ul>
+            <button onclick="openCheckoutForm()">Subscribe</button>
+        </div>
+        <div class="plan">
+            <h2>3 Months</h2>
+            <p class="price">&#8377 93.60</p>
+            <ul>
+                <li>Unlimited access to music library</li>
+                <li>Ad-free listening</li>
+                <li>Offline downloads</li>
+                <li>Save 20%</li>
+            </ul>
+            <button onclick="openCheckoutForm()">Subscribe</button>
+        </div>
+        <div class="plan">
+            <h2>6 Months</h2>
+            <p class="price">&#8377 175.50</p>
+            <ul>
+                <li>Unlimited access to music library</li>
+                <li>Ad-free listening</li>
+                <li>Offline downloads</li>
+                <li>Save 25%</li>
+            </ul>
+            <button onclick="openCheckoutForm()">Subscribe</button>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Sangeet-सागर Subscription</p>
+  </footer>
+
+  <script src="subs.js"></script>
+</body>
+</html>
