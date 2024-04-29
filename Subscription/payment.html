@@ -39,7 +39,9 @@
 					</label>
 				</div>
 			</form>
-			<input type="submit" name="" value="Proceed to Checkout">
+			<!-- <input type="submit" name="" value="Proceed to Checkout"> -->
+			<button id="proceedToCheckout">Proceed to Checkout</button>
+
 		</div>
 		<!-- <div class="right">
 			<h3>PAYMENT</h3>
@@ -75,5 +77,29 @@
 		</div> -->
 	</div>
 </header>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+	document.getElementById('proceedToCheckout').addEventListener('click', function() {
+    var options = {
+        key: 'rzp_test_sKCkNar9c5QtX5', // Replace with your Razorpay API Key
+        amount: 100, // Amount in paisa (e.g., ₹10.00 = 1000)
+        currency: 'INR',
+        name: 'Sangeet-सागर',
+        description: 'Subscription Payment',
+        prefill: {
+            name: 'John Doe', // User's name
+            email: 'john.doe@example.com' // User's email
+        },
+        handler: function(response) {
+            alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
+            // You can handle the payment success event here
+        }
+    };
+
+    var razorpay = new Razorpay(options);
+    razorpay.open();
+});
+
+</script>
 </body>
 </html>

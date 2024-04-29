@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sangeet-सागर ♫</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/97598a38db.js"
       crossorigin="anonymous"
@@ -20,13 +20,13 @@
             <li>Home</li>
           </a>
           <a href="Spotify_Clone-master/index.html">
-            <li>Free Trial</li>
+            <li>Dive-in-music</li>
           </a>
           <a href="chatBot.html">
           <li>Search Music</li>
           </a>
-          <a href="Login/index.html" onclick="openLoginPopup()">
-          <li>Login</li>
+          <a href="Login/register.html">
+          <li>Register/Login</li>
           </a>
         </ul>
       </nav>
@@ -40,7 +40,7 @@
              Where Melodies Meet Magic!</h4>
           <h2>
             Embark on a Musical Journey with Sangeet-सागर ♫ 
-            Your Destination for Sublime Tunes, Exclusive Subscriptions, and Memorable Gifts!
+            Your Destination for Sublime Tunes, Exclusive Subscriptions, and Memorable Moments!
           </h2>
         </div>
       </section>
@@ -51,12 +51,11 @@
           </h2>
           <h4> Million songs. Zero ads.</h4>
           <p>
-            Stream over 45 million songs, ad-free. Or download albums and tracks
-            to listen to offline. All the music in your personal Sangeet-सागर library
-             <center>— no matter where it came from — your free three-month trial with no commitment,
-              and cancel anytime.</center>
+            Stream over 5 million songs, ad-free. Or download albums and tracks
+            to listen it offline. All the music in your personal Sangeet-सागर library
+             <center> No matter where it came from — Experience the difference with our free Music — No catch, just an opportunity to explore.</center>
           </p>
-          <button class="primary-btn" onclick="window.location.href='Spotify_Clone-master/index.html'">Start Your Trail Now at Sangeet-सागर ♫</button>
+          <button class="primary-btn" onclick="window.location.href='Spotify_Clone-master/index.html'">Start Your Journey Now at Sangeet-सागर ♫</button>
 
           <p>
             All kinds of music is available in Sangeet-सागर, and for iOS and Android
@@ -68,7 +67,7 @@
         </div>
       </section>
       <section class="about-music container">
-        <h3>Let us guide you to the ideal soundtrack for every moment, no matter how you're feeling.</h3>
+        <h3>Let us guide you to the ideal soundtrack for every moment, It matters how you're feeling.</h3>
         <p>
           It is a gateway to a world of endless musical possibilities. With its user-friendly interface, personalized search capabilities, and collaborative spirit, this feature empowers users to discover, explore, and connect with music in a way that's uniquely their own.
         </p>
@@ -90,7 +89,7 @@
       <div class="container">
         <section class="gift-section container" id="gift">
           <div class="gift-card">
-            <img src="images/3476376.png" alt="" />
+            <img src="images/3476376.png" alt="Subscribe image" />
           </div>
           <div class="gift-content">
             <h3>Why to Subscribe Us?</h3>
@@ -132,7 +131,7 @@
             <!-- <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i> Home </a> -->
             <a href="Spotify_Clone-master/index.html" class="links"> <i class="fas fa-arrow-right"></i> Free Trial </a>
             <a href="chatBot.html" class="links"> <i class="fas fa-arrow-right"></i> Search Music </a>
-            <a href="Login/index.html" class="links"> <i class="fas fa-arrow-right"></i> Login </a>
+            <a href="Login/login.html" class="links"> <i class="fas fa-arrow-right"></i> Login </a>
             <a href="Subscription/SignUp.html" class="links"> <i class="fas fa-arrow-right"></i> Subscribe </a>
             <!-- <a href="#" class="links"> <i class="fas fa-arrow-right"></i> blogs </a> -->
           </div>
@@ -142,5 +141,28 @@
         <p>&copy; 2024 Sangeet-सागर</p>
       </section>
     </footer>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDBpdasWe3AHkyorY27LSNvVeBPgL7C8q8",
+        authDomain: "sangeet-sagar-1db37.firebaseapp.com",
+        projectId: "sangeet-sagar-1db37",
+        storageBucket: "sangeet-sagar-1db37.appspot.com",
+        messagingSenderId: "507297685238",
+        appId: "1:507297685238:web:aceb5f78e28664ae0bd6d7",
+        measurementId: "G-3J7LB082ZE"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>
