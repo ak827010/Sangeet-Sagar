@@ -20,33 +20,33 @@
             <h2>1 Month</h2>
             <p class="price">&#8377 39</p>
             <ul>
-                <li>Unlimited access to music library</li>
+                <li>Unlimited access to Live Music</li>
                 <li>Ad-free listening</li>
                 <li>Offline downloads</li>
             </ul>
-            <button onclick="openCheckoutForm()">Subscribe</button>
+            <button onclick="setAmount(39)">Subscribe</button>
         </div>
         <div class="plan">
             <h2>3 Months</h2>
-            <p class="price">&#8377 93.60</p>
+            <p class="price">&#8377 93</p>
             <ul>
-                <li>Unlimited access to music library</li>
+                <li>Unlimited access to Live Music</li>
                 <li>Ad-free listening</li>
                 <li>Offline downloads</li>
                 <li>Save 20%</li>
             </ul>
-            <button onclick="openCheckoutForm()">Subscribe</button>
+            <button onclick="setAmount(93)">Subscribe</button>
         </div>
         <div class="plan">
             <h2>6 Months</h2>
-            <p class="price">&#8377 175.50</p>
+            <p class="price">&#8377 175</p>
             <ul>
-                <li>Unlimited access to music library</li>
+                <li>Unlimited access to Live Music</li>
                 <li>Ad-free listening</li>
                 <li>Offline downloads</li>
                 <li>Save 25%</li>
             </ul>
-            <button onclick="openCheckoutForm()">Subscribe</button>
+            <button onclick="setAmount(175)">Subscribe</button>
         </div>
     </section>
   </main>
@@ -55,6 +55,12 @@
     <p>&copy; 2024 Sangeet-सागर Subscription</p>
   </footer>
 
-  <script src="subs.js"></script>
+  <!-- <script src="subs.js"></script> -->
+  <script>
+    function setAmount(amount) {
+        localStorage.setItem('price', amount);
+        window.location.href = 'payment.html'; // Redirect to the checkout page
+    }
+</script>
 </body>
 </html>

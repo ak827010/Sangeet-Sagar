@@ -39,6 +39,7 @@ submit.addEventListener("click", function (event) {
             // Signed up 
             const user = userCredential.user;
             alert("Account Created... Happy Listening.")
+            window.location.href = "../Spotify_Clone-master/index.html";
             //for redirecting to a page when clicked on ok after alert
             // window.location.href = 'index.html';
             // ...

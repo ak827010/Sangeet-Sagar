@@ -2,7 +2,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-analytics.js";
-import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
+import { getAuth, signInWithEmailAndPassword, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -39,6 +39,7 @@ submit.addEventListener("click", function (event) {
             // Signed up 
             const user = userCredential.user;
             alert("Logged in Successfully")
+            window.location.href = "../Spotify_Clone-master/index.html";
             //for redirecting to a page when clicked on ok after alert
             // window.location.href = 'index.html';
             // ...
@@ -46,7 +47,26 @@ submit.addEventListener("click", function (event) {
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
-            alert("Enter Valid details..")
+            alert("Enter Valid Credentials..")
+            // ..
+        });
+})
+
+//forgot password
+const plink = document.getElementById('password-link');
+plink.addEventListener("click", function (event) {
+    event.preventDefault()
+    //inputs
+    const email = document.getElementById('email').value;
+    const auth = getAuth();
+    sendPasswordResetEmail(auth, email)
+        .then(() => {
+            alert("Reset Password link sent to registered email ID")
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            alert("Enter valid Credentials")
             // ..
         });
 })
