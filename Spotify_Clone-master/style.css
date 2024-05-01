@@ -42,7 +42,7 @@ header .menu-side,
 
 header .song-side {
   width: 75%;
-  background: #3e001f;
+  background: #090909;
 }
 
 /* Play in bottom */
@@ -442,7 +442,7 @@ header .song-side::before {
   position: absolute;
   width: 100%;
   height: 300px;
-  background: url("bg.png");
+  /* background: url("bg.png"); */
   z-index: -1;
 }
 
@@ -542,6 +542,18 @@ header .song-side nav .user img {
   height: 100%;
   border-radius: 50%;
   box-shadow: 2px 2px 8px #121213;
+}
+
+header .song-side nav .buttons button {
+  width: 130px;
+  height: 30px;
+  border: 2px solid #36e3ec;
+  outline: none;
+  border-radius: 20px;
+  background: #5adae0;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s linear;
 }
 
 header .song-side .container {

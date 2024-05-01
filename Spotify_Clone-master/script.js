@@ -28,98 +28,98 @@ const songs = [
   },
   {
     id: "5",
-    songName: `O Re Piya <br>
+    songName: `Alone <br>
       <div class="subtitle">Alan Walker</div>`,
     poster: "img/5.jpg",
   },
   {
     id: "6",
-    songName: `Beats<br>
+    songName: `Lost Control<br>
      <div class="subtitle">Alan Walker</div>`,
     poster: "img/6.jpg",
   },
   {
     id: "7",
     songName: `Agar Tum Sath Ho <br>
-      <div class="subtitle">Alan Walker</div>`,
+      <div class="subtitle">Arijit Singh</div>`,
     poster: "img/7.jpg",
   },
   {
     id: "8",
-    songName: `Sanak <br>
-      <div class="subtitle">Alan Walker</div>`,
+    songName: `Suna Hai <br>
+      <div class="subtitle">Jubin Nautiyal</div>`,
     poster: "img/8.jpg",
   },
   {
     id: "9",
     songName: `Dilbar<br>
-      <div class="subtitle">Alan Walker</div>`,
+      <div class="subtitle">Neha Kakkar</div>`,
     poster: "img/9.jpg",
   },
   {
     id: "10",
     songName: `Duniyaa<br>
-      <div class="subtitle">Alan Walker</div>`,
+      <div class="subtitle">Dhvani Bhanushali</div>`,
     poster: "img/10.jpg",
   },
   {
     id: "11",
     songName: `Lagdi Lahore Di  <br>
-      <div class="subtitle">Alan Walker</div>`,
+      <div class="subtitle">Guru Randhawa</div>`,
     poster: "img/11.jpg",
   },
   {
     id: "12",
     songName: `Putt Jatt Da <br>
-      <div class="subtitle">Alan Walker</div>`,
+      <div class="subtitle">Diljit Dosanjh</div>`,
     poster: "img/12.jpg",
   },
   {
     id: "13",
     songName: `Raatan Lambiyan <br>
-     <div class="subtitle">Alan Walker</div>`,
+     <div class="subtitle">Jubin Nautiyal</div>`,
     poster: "img/13.jpg",
   },
   {
     id: "14",
     songName: `Vaaste<br>
-    <div class="subtitle">Alan Walker</div>`,
+    <div class="subtitle">Dhvani Bhanushali</div>`,
     poster: "img/14.jpg",
   },
   {
     id: "15",
     songName: `Lut Gaye <br>
-      <div class="subtitle">Alan Walker</div>`,
+      <div class="subtitle">Jubin Nautiyal</div>`,
     poster: "img/15.jpg",
   },
   {
     id: "16",
     songName: `Meri Zindagi Hai Tu<br>
-     <div class="subtitle">Alan Walker</div>`,
+     <div class="subtitle">Neeti Mohan</div>`,
     poster: "img/16.jpg",
   },
   {
     id: "17",
     songName: `Zaroori Tha<br>
-      <div class="subtitle">Alan Walker</div>`,
+      <div class="subtitle">Rahat Fateh Ali Khan</div>`,
     poster: "img/17.jpg",
   },
   {
     id: "18",
     songName: `Pasoori<br>
-      <div class="subtitle">Alan Walker</div>`,
+      <div class="subtitle">Ali sethi</div>`,
     poster: "img/18.jpg",
   },
   {
     id: "19",
     songName: `Insane<br>
-     <div class="subtitle">Alan Walker</div>`,
+     <div class="subtitle">AP Dhillon</div>`,
     poster: "img/19.jpg",
   },
   {
     id: "20",
     songName: `Vande mantram<br>
-      <div class="subtitle">Alan Walker</div>`,
+      <div class="subtitle">Daler Mehndi</div>`,
     poster: "img/20.jpg",
   },
 ];
